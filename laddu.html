@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Response</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #ff0000, #000000); /* Red to Black gradient background */
+        }
+        .container {
+            text-align: center;
+            background: #ffffff; /* White background for the content */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #000000; /* Black text color */
+            font-weight: bold; /* Bold text */
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #ffffff; /* White text color for buttons */
+            font-weight: bold; /* Bold text */
+        }
+        .yes-button {
+            background-color: #4CAF50; /* Green background */
+        }
+        .no-button {
+            background-color: #f44336; /* Red background */
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold; /* Bold text */
+            color: #000000; /* Black text color */
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hey Beautiful soul I will be there for U what ever happens in  the world I will be behinde u.WILL U TRUN ONCE BEHINDE ? I LOVE U FOREVER.
+</h1>
+        <button class="yes-button" onclick="handleResponse('Yes')">Yes</button>
+        <button class="no-button" onclick="handleResponse('No')">No</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function handleResponse(response) {
+            document.getElementById('result').textContent = `You selected: ${response}`;
+        }
+    </script>
+</body>
+</html>
